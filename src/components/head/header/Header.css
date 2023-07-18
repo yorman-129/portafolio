@@ -1,0 +1,19 @@
+.card-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name, .description{
+    text-align: center;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: center;
+}
+.optionSocial{
+    width: inherit;
+    margin: 0px 12px;
+}
