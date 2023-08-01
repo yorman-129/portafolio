@@ -1,31 +1,55 @@
 .nav-container {
-    width: 800px;
-    height: 45px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-  
-  .logo-container {
-    color: #7b64ff;
-  }
-  
-  .options-container {
-    width: 400px;
-  }
-  
-  .options > a {
-    width: 40px;
-    height: 60px;
-    margin-right: 30px;
-    font-weight: 500;
-    color: #7b64ff;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  .options > a:hover {
-    color: #535bf2;
-    text-decoration: underline;
-  }
-  
+  background: #080413;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+}
+
+.logo-container {
+  color: #7b64ff;
+  height: inherit;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+
+}
+
+.options-container {
+  width: 450px;
+  height: inherit;
+
+}
+
+.options {
+  font-size: 1.2rem;
+  height: inherit;
+  display: flex;
+}
+
+.item-option {
+  list-style: none;
+  width: fit-content;
+  height: inherit;
+  margin-right: 30px;
+  font-weight: 500;
+  color: #7b64ff;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.item-option:hover {
+  cursor:  pointer;
+  color: #4a4af3;
+  box-shadow: 0px 3px 0px 0px #7b64ff;
+  border-radius: 3px;
+  font-weight: 600;
+}

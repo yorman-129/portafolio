@@ -7,14 +7,14 @@ function Navigation() {
     <>
       <nav className='nav-container'>
         <div className='logo-container'>
-            <div className='logo'>{"{Y3TDEV}"}</div>
+            <div className='logoItem'>{"{Y3TDEV}"}</div>
         </div>
         <div className='options-container'>
             <div className="options">
-                <a href="#">Home</a>
-                <a href="#">Projects</a>
-                <a href="#">Experiencia</a>
-                <a href="#">Contact me</a>
+                <li className='item-option' href="#">Home</li>
+                <li className='item-option' href="#">Projects</li>
+                <li className='item-option' href="#">Experiencia</li>
+                <li className='item-option' href="#">Contact me</li>
             </div>
         </div> 
       </nav>

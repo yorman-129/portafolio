@@ -1,0 +1,33 @@
+.container-box{
+    width: 100%;
+    height: 650px;
+    margin: 15px 0px 15px 0px;
+    display: flex;
+}
+
+.aside-list{
+    width: 30%;
+    margin-top: 27px;
+}
+.aside-list > p{
+    margin:10px 0px 10px 40px;
+}
+.li-item{
+    list-style: none;
+    font-size: 1.2rem;
+    margin:10px 0px 10px 40px;
+    cursor: pointer;
+}
+.li-item-selected{
+    color:#7b64ff;
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin:10px 0px 10px 40px;
+    text-decoration: underline;
+}
+
+.container-projects{
+    width: 70%;
+    margin: 10px 40px 15px 0px;
+}
