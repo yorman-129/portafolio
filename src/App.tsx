@@ -2,7 +2,6 @@ import './App.css'
 import Header from './components/head/header/Header'
 import Navigation from './components/head/nav/Navigation'
 import Projects from './components/projects/Projects'
-import  TicTacToe  from './components/projects/tictactoe/TicTacToe'
 import { Studies } from './components/studies/Studies'
 
 function App() {

@@ -29,10 +29,14 @@
   font-size: 1.2rem;
   height: inherit;
   display: flex;
+  align-items: center;
+}
+
+li{
+  list-style: none;
 }
 
 .item-option {
-  list-style: none;
   width: fit-content;
   height: inherit;
   margin-right: 30px;

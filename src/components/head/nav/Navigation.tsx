@@ -11,10 +11,10 @@ function Navigation() {
         </div>
         <div className='options-container'>
             <div className="options">
-                <li className='item-option' href="#">Home</li>
-                <li className='item-option' href="#">Projects</li>
-                <li className='item-option' href="#">Experiencia</li>
-                <li className='item-option' href="#">Contact me</li>
+                <li > <a className='item-option' href="#">Inicio</a></li>
+                <li > <a className='item-option' href="#projects">Proyectos</a></li>
+                <li > <a className='item-option' href="#estudios">Estudios</a></li>
+                <li > <a className='item-option' href="#contacto">Contactame</a></li>
             </div>
         </div> 
       </nav>
