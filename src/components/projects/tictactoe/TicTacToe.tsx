@@ -1,16 +1,15 @@
 import { useState } from 'react';
 import './tictactoe.css'
 import { TURNS, WINNER_COMBOS } from '../../../constants'
-import conffeti from 'canvas-confetti';
+import confeti from 'canvas-confetti';
 import Square from './Square';
 
 const TicTacToe = () => {
     const [board, setBoard] = useState(Array(9).fill(null))
     const [turn, setTurn] = useState(TURNS.X)
-    //null no ganador, false empate
-    const [winner, setWinner] = useState(null)
+    const [winner, setWinner] = useState<string | null | false>(null);
 
-    const checkWinner = (boardToCheck) => {
+    const checkWinner = (boardToCheck: any) => {
         for (const combo of WINNER_COMBOS) {
 
             const [a, b, c] = combo
@@ -24,11 +23,11 @@ const TicTacToe = () => {
         return null
     }
 
-    const checkEndGame = (newBoard) => {
-        return newBoard.every((square) => square !== null)
+    const checkEndGame = (newBoard: any) => {
+        return newBoard.every((square: any) => square !== null)
     }
 
-    const updateBoard = (indice) => {
+    const updateBoard = (indice: any) => {
         //si ya tiene algo no actualizamos la posicion
         if (board[indice] || winner) return
         const newBoard = [...board]
@@ -41,7 +40,7 @@ const TicTacToe = () => {
         const newWinner = checkWinner(newBoard)
 
         if (newWinner) {
-            conffeti()
+            confeti()
             setWinner(() => newWinner)
         } else if (checkEndGame(newBoard)) {
             setWinner(false)
@@ -62,9 +61,11 @@ const TicTacToe = () => {
                 <section className="game">
                     {
                         board.map((item, index) => {
+                            let Item=item;
+                            item=Item
                             return (
                                 <Square
-                                    key={index} index={index} updateBoard={updateBoard}>
+                                    key={index} index={index} updateBoard={updateBoard} isSelected={false}>
                                     {board[index]}
                                 </Square>
                             )
@@ -72,8 +73,8 @@ const TicTacToe = () => {
                     }
                 </section>
                 <section className="turn">
-                    <Square isSelected={turn === TURNS.O}>{TURNS.O}</Square>
-                    <Square isSelected={turn === TURNS.X}>{TURNS.X}</Square>
+                    <Square updateBoard={() => {}} index={0} isSelected={turn === TURNS.O}>{TURNS.O}</Square>
+                    <Square updateBoard={() => {}} index={0} isSelected={turn === TURNS.X}>{TURNS.X}</Square>
                 </section>
                 {
                     winner !== null && (
@@ -87,7 +88,7 @@ const TicTacToe = () => {
                                     }
                                 </h2>
                                 <header className="win">
-                                    {winner && <Square>{winner}</Square>}
+                                    {winner && <Square updateBoard={() => {}} index={0} isSelected={false}>{winner}</Square>}
                                 </header>
 
                                 <footer>

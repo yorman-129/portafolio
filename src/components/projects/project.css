@@ -1,8 +1,10 @@
 .container-box {
-    width: 100%;
+    width: 90%;
     height: 650px;
-    margin: 4px 0px 15px 0px;
+    margin: 40px auto 0px auto;
     display: flex;
+    box-shadow: 1px 1px 1px 3px #7b64ff;
+    border-radius: 18px;
 }
 
 .aside-list {
@@ -10,6 +12,8 @@
     padding-top: 27px;
     background-color: #080413;
     padding: 15px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
 }
 
 .aside-list p {
@@ -37,6 +41,7 @@
     font-weight: bold;
     margin: 10px 0px;
     padding-left: 10px;
+    border-left: 4px solid transparent;
     border-left-color: #7b64ff;
 }
 

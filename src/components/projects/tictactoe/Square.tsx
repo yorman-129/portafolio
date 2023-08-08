@@ -1,6 +1,6 @@
 export interface SquareProps {
     children: React.ReactNode;
-    updateBoard: () => void;
+    updateBoard: (index: any) => void;
     index: number;
     isSelected: boolean;
 }
