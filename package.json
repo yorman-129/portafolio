@@ -1,11 +1,11 @@
 {
   "name": "monkeydev",
   "private": true,
-  "homepage": "https://yorman-129.github.io/portafolio",
+  "homepage": "http://yorman-129.github.io/portafolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build && echo 'yorman.me' > ./dist/CNAME",
+    "predeploy": "npm run build && echo yorman.me > ./dist/CNAME",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
