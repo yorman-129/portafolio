@@ -3,14 +3,12 @@ import { Card } from './Card';
 import './news.css'
 
 export const NewsApi = () => {
-    const key = '9d65c517a24940308eb4199db1d0810c';
-
     const [articles, setData] = useState<any[]>([])
     const [category, setCategory] = useState<string>("")
 
     const getNews = async (category: string) => {
         try {
-            const url = `https://newsapi.org/v2/top-headlines?country=co&category=${category}&apiKey=${key}`
+            const url = `https://newsapi.org/v2/top-headlines?country=co&category=${category}&apiKey=9d65c517a24940308eb4199db1d0810c`
             const response = await fetch(url);
 
             if (!response.ok) {
