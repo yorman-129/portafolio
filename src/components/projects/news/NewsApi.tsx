@@ -8,7 +8,7 @@ export const NewsApi = () => {
 
     const getNews = async (category: string) => {
         try {
-            const url = `https://newsapi.org/v2/top-headlines?country=co&category=${category}&apiKey=9d65c517a24940308eb4199db1d0810c`
+            const url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=9d65c517a24940308eb4199db1d0810c`
             const response = await fetch(url);
 
             if (!response.ok) {
