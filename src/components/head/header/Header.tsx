@@ -36,7 +36,11 @@ const Header=()=> {
                   Yorman Estiven Tobón L.
                 </p>
                 <p className="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Quos eveniet ipsum nesciunt vero officia ab minima iure corrupti,<br/> commodi mollitia? Nobis doloribus numquam laboriosam 
+                ¡Hola!, es un placer que estés en mi perfil. Te quiero contar algo sobre mí.<br/>
+                Soy un estudiante de <b>ingeniería informática </b>
+                actualmente en el <b>8/10 semestre</b>, en el recorrido
+                he podido especializarme en la universidad Eafit
+                en su programa de Nodo los modulos de frontend y backend.
                 </p>
           </div>
                 
