@@ -1,6 +1,5 @@
-{
-    "data": {
-        "technology": [
+const data: any =[
+        {"technology":[
             {
                 "author": "CNN en Español",
                 "title": "Guerra de Rusia en Ucrania, en vivo: última hora y noticias - CNN en Español",
@@ -91,8 +90,8 @@
                 "publishedAt": "2023-08-22T22:45:07Z",
                 "url": "https://news.google.com/rss/articles/CBMiXmh0dHBzOi8vd3d3LmVsY29sb21iaWFuby5jb20vbmVnb2Npb3MvcG9yLXF1ZS1sb3MtY2VsdWxhcmVzLXBsZWdhYmxlcy1zb24tdGFuLWNhcm9zLUtJMjIxOTc4MzbSAWJodHRwczovL3d3dy5lbGNvbG9tYmlhbm8uY29tL2FtcC9uZWdvY2lvcy9wb3ItcXVlLWxvcy1jZWx1bGFyZXMtcGxlZ2FibGVzLXNvbi10YW4tY2Fyb3MtS0kyMjE5NzgzNg?oc=5"
             }
-        ],
-        "entertainment": [
+        ]},
+        {"entertainment": [
             {
                 "author": "El Colombiano",
                 "title": "¡Récord! Karol G rompe registros con el álbum 'Mañana será bonito Bichota Season'",
@@ -141,8 +140,8 @@
                 "publishedAt": "2023-08-23T07:46:29Z",
                 "url": "newsGoogleArtíclesDandeCrimeneptoasCulturamodavidadesXashionBeauty123ElHeraldoHallanMuertaNiña15AñosCasaSurBarranquilla"
             }
-        ],
-        "sports": [
+        ]},
+        {"sports": [
             {
                 "author": "Federación colombiana de fútbol",
                 "title": "Árbitros definidos para los partidos de Colombia en las CONMEBOL Eliminatorias - Federación colombiana de fútbol",
@@ -215,8 +214,8 @@
                 "publishedAt": "2023-08-22T21:43:00Z",
                 "url": "https://news.google.com/rss_articles/CBMiT2h0dHBzOi8vd3d3LmVsZXNwZWN0YWRvci5jb20vbmV3cy9pbXBvcnRhbmNvLWRlLWN1aWRhci1sb3Mtby1zZWxlY3RpY2Fkby1kZS1jdWlkYXItbG9zLW9jZW5hbm9zL9IBAA?oc=5"
             }
-        ],
-        "health": [
+        ]},
+        {"health": [
             {
                 "author": "Muy Interesante",
                 "title": "La medicina en 'El Quijote': profesionales sanitarios que se dan cita en la obra de Cervantes - Muy Interesante",
@@ -271,8 +270,8 @@
                 "publishedAt": "2023-08-23T03:38:27Z",
                 "url": "https://news.google.com/rss_articles/CBMidGh0dHBzOi8vd3d3LmNubi5jb20vbmV3cy82NzUwMTA0NS9qb3Zlbi1jb24tYWx6aW1hYmVyLWNyZWEtYXJ0ZS1wYXJhLWVuZnJlbnRhcmlzLWNyZWEtYXJ0ZS1tYXJjaGFf0gEA?oc=5"
             }
-        ],
-        "business": [
+        ]},
+        {"business": [
             {
                 "author": "Pulzo.com",
                 "title": "Dólar hoy 23 de agosto cayó, a la espera de una reunión clave - Pulzo.com",
@@ -333,6 +332,6 @@
                 "publishedAt": "2023-08-22T23:46:23Z",
                 "url": "https://news.google.com/rss/articles/CBMifmh0dHBzOi8vd3d3LnB1bHpvLmNvbS9lY29ub21pYS9lbnRpZGF0aWVudHMtbm8tc2UtcG9uZW4tZGUtYWNjb3Vwby1zb3Jib3UtZWZmZWN0b3MtZGUtcHJvY2VkdG8tcXVlLWJhc2FyLWNvc3Rvcy1kZS1sYS1jb3J0ZS0yMzkwLmh0bWzSAXdodHRwczovL3d3dy5wdWx6by5jb20vYW1wL2Vjb25vbWlhL2VudGlkYXRlbnRzLW5vLXNlLXBvbmVuLWRlLWFjY291c28tc29yYm91LWVmZWxlY3Rvcy1kZS1wcm9jZWR0by1xdWUtYmFzYXItY29zdG9zLWRlLWxhLWNvcnRlLTIzOTAuaHRtbA?oc=5"
             }
-        ]
-    }
-}
+        ]}
+  ]
+  export default data;

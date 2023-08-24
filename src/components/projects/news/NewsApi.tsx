@@ -1,16 +1,22 @@
 import React, { useState } from 'react'
 import { Card } from './Card';
 import './news.css'
-import dataNews from '../../../data.json';
+import data from '../../../data.js';
+
+interface Article {
+    author: string;
+    title: string;
+    publishedAt: string;
+    url: string;
+  }
+
+
+  const dataNews: Article[]= data;
 
 export const NewsApi = () => {
-    const [articles, setData] = useState<any[]>([])
+    const [articles, setData] = useState<st[]>([])
     const [category, setCategory] = useState<string>("")
 
-    const getNews = async (category: string) => {
-     console.log(dataNews.data.business)
-
-    }
 
     const handleSelect = (evento: React.FormEvent<HTMLSelectElement> | any) => {
         setCategory(evento.target.value);
@@ -18,7 +24,23 @@ export const NewsApi = () => {
 
     const handleClick = (evento: React.FormEvent) => {
         evento.preventDefault()
-        getNews(category);
+       console.log(category)
+       dataNews.forEach((item,index)=>{
+           if (index==parseInt(category)) {
+            if (index==0) {
+                setData(item.technology)
+            }else if (index==1) {
+                setData(item.entertainment)
+            }else if (index==2) {
+                setData(item.sports)
+            }else if (index==3) {
+                setData(item.health)
+            }else if (index==4) {
+                setData(item.business)
+            }
+            
+           }
+       })
     }
 
     return (
@@ -27,12 +49,11 @@ export const NewsApi = () => {
                 <form action="">
                     <label htmlFor="">¿Sobre que tema te interesan las noticias?</label>
                     <select name="category" id="category" onChange={handleSelect}>
-                        <option value="technology">Tecnología</option>
-                        <option value="entertainment">Entretenimiento</option>
-                        <option value="science">Ciencia</option>
-                        <option value="sports">Deportes</option>
-                        <option value="health">Salud</option>
-                        <option value="business">Negocios</option>
+                        <option value="0">Tecnología</option>
+                        <option value="1">Entretenimiento</option>
+                        <option value="2">Deportes</option>
+                        <option value="3">Salud</option>
+                        <option value="4">Negocios</option>
                     </select>
                     <input type="submit" value="Enviar" onClick={handleClick} />
                 </form>
