@@ -11,10 +11,12 @@ interface Article {
   }
 
 
-  const dataNews: Article[]= data;
+  
+
+  const dataNews: any= data;
 
 export const NewsApi = () => {
-    const [articles, setData] = useState<st[]>([])
+    const [articles, setData] = useState<any[]>([])
     const [category, setCategory] = useState<string>("")
 
 
@@ -25,7 +27,7 @@ export const NewsApi = () => {
     const handleClick = (evento: React.FormEvent) => {
         evento.preventDefault()
        console.log(category)
-       dataNews.forEach((item,index)=>{
+       dataNews.forEach((item:any,index:any)=>{
            if (index==parseInt(category)) {
             if (index==0) {
                 setData(item.technology)
