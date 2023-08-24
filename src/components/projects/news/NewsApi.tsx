@@ -7,10 +7,10 @@ export const NewsApi = () => {
     const [category, setCategory] = useState<string>("")
 
     const getNews = async (category: string) => {
-        console.log(category)
         try {
-            const url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=9d65c517a24940308eb4199db1d0810c`
+            const url = `https://newsapi.org/v2/top-headlines?country=co&category=${category}&apiKey=9d65c517a24940308eb4199db1d0810c`
             const response = await fetch(url);
+            console.log(response.json())
 
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -44,7 +44,6 @@ export const NewsApi = () => {
                         <option value="sports">Deportes</option>
                         <option value="health">Salud</option>
                         <option value="business">Negocios</option>
-                        <option value="general">General</option>
                     </select>
                     <input type="submit" value="Enviar" onClick={handleClick} />
                 </form>
