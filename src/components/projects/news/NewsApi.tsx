@@ -3,17 +3,7 @@ import { Card } from './Card';
 import './news.css'
 import data from '../../../data.js';
 
-interface Article {
-    author: string;
-    title: string;
-    publishedAt: string;
-    url: string;
-  }
-
-
-  
-
-  const dataNews: any= data;
+const dataNews: any= data;
 
 export const NewsApi = () => {
     const [articles, setData] = useState<any[]>([])
