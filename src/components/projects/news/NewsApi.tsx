@@ -7,6 +7,7 @@ export const NewsApi = () => {
     const [category, setCategory] = useState<string>("")
 
     const getNews = async (category: string) => {
+        console.log(category)
         try {
             const url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=9d65c517a24940308eb4199db1d0810c`
             const response = await fetch(url);
