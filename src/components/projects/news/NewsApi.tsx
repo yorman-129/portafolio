@@ -1,26 +1,15 @@
 import React, { useState } from 'react'
 import { Card } from './Card';
 import './news.css'
+import dataNews from '../../../data.json';
 
 export const NewsApi = () => {
     const [articles, setData] = useState<any[]>([])
     const [category, setCategory] = useState<string>("")
 
     const getNews = async (category: string) => {
-        try {
-            const url = `https://newsapi.org/v2/top-headlines?country=co&category=${category}&apiKey=9d65c517a24940308eb4199db1d0810c`
-            const response = await fetch(url);
-            console.log(response.json())
+     console.log(dataNews.data.business)
 
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            const dataNews = await response.json();
-            console.log(dataNews)
-            setData(dataNews.articles)
-        } catch (error) {
-            console.log(error, "mensaje")
-        }
     }
 
     const handleSelect = (evento: React.FormEvent<HTMLSelectElement> | any) => {
