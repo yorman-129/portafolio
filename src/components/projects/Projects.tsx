@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <div className="container-box" id="projects">
             <aside className="aside-list">
-                <p style={{ color: '#7b64ff', fontSize: '1.2rem' }}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus provident rerum maxime eius dolorem.</p>
+                <p style={{ color: '#7b64ff', fontSize: '1.2rem' }}>Explora mis proyectos: un emocionante juego de 3 en raya🎮, noticias frescas🗞️ y documentación esencial de una de API's desarrolladas🧙‍♂️</p>
                 <li className={`li-item${project == 1 ? "-selected" : ""}`} onClick={() => setProject(1)} > Noticias</li>
                 <li className={`li-item${project == 2 ? "-selected" : ""}`} onClick={() => setProject(2)} > Juego 3 en raya</li>
             </aside>
