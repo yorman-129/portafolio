@@ -12,8 +12,8 @@ function App() {
 
         <Navigation/>
         <Header/>
-        <Projects/>
         <Studies/>
+        <Projects/>
     </>
   )
 }
