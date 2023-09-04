@@ -1,7 +1,7 @@
 import './studies.css'
 export const Studies = () => {
   return (
-    <div className="container-studies">
+    <div className="container-studies" id='projects'>
       <div className="title-studies">
         <h2 style={{ fontSize: '2.4rem' }}>
           Formación académica
