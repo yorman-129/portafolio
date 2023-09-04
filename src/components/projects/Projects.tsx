@@ -3,7 +3,7 @@ import { NewsApi } from "./news/NewsApi"
 import TicTacToe from "./tictactoe/TicTacToe"
 import "./project.css"
 const Projects = () => {
-    const [project, setProject] = useState(0)
+    const [project, setProject] = useState(2)
     return (
         <div className="container-box" id="projects">
             <aside className="aside-list">
