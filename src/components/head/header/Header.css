@@ -2,6 +2,7 @@
 .header-container{
     background-color: #302f2f;
     width: 100%;
+    min-height: 483px;
     display: flex;
     box-shadow: 2px 0px 0px 4px #7b64ff;
     border-bottom-left-radius: 5px;
@@ -9,7 +10,7 @@
     
 }
 .card-container{
-    margin: 150px auto 0px auto;
+    margin: 106px auto 0px auto;
     display: flex;
     flex-direction: row;
     align-items: center;

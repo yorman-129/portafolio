@@ -18,6 +18,9 @@
    flex-wrap: wrap;
    justify-content: center;
 }
+.section-items a:hover{
+    color: #7b64ff;
+}
 .itemStudy{
     width: 40%;
     height: 300px;
